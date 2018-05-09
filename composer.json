@@ -1,0 +1,12 @@
+{
+    "name": "basewd/boleto_pdf",
+    "authors": [
+        {
+            "name": "Grégori Sória",
+            "email": "gregorisoria@gmail.com"
+        }
+    ],
+    "require": {
+        "spipu/html2pdf": "^5.1"
+    }
+}
