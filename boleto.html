@@ -2,12 +2,231 @@
 <html lang="en">
 <head>
     <style>
-        div {
-            border: 2px solid #000;
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            color: #000;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .aviso {
+            position: relative;
+            border: 1px solid #000;
+        }
+
+        .aviso .header {
+            position: relative;
+            text-align: center;
+            padding: 0 100px;
+            width: 100%;
+        }
+
+        .aviso h4 {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            font-size: 11px;
+            font-weight: normal;
+        }
+
+        .aviso-brasao {
+            position: absolute;
+            margin-bottom: -130px;
+            top: 5px;
+            left: 5px;
+            width: 60px;
+        }
+
+        .aviso h2 {
+            position: relative;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .aviso h3 {
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .aviso .personal-info {
+            position: relative;
+            padding: 0 10px;
+            height: 90px;
+        }
+
+        .aviso .personal-info .contrato {
+            margin-left: 40px;
+        }
+
+        .aviso .personal-info p {
+            padding: 10px 0;
+            font-size: 12px;
+            text-align: justify;
+        }
+
+        .aviso .personal-info .aviso-barcode {
+            position: absolute;
+            left: 650px;
+            bottom: 5px;
+            margin-right: -50px;
+            margin-bottom: 45px;
+            width: 100px;
+        }
+
+        p .space {
+            margin-left: 50px;
+        }
+
+        .service {
+            position: relative;
+            padding: 10px 0;
+            height: 200px;
+        }
+
+        .service .infos .service-premiun {
+            position: absolute;
+            left: 580px;
+            top: 5px;
+            margin-right: -50px;
+            margin-bottom: -240px;
+            width: 180px;
+        }
+
+        .total {
+            position: relative;
+            height: 80px;
+        }
+
+        .total .first-arrow {
+            position: absolute;
+            margin-right: -400px;
+            margin-bottom: 50px;
+            width: 330px;
+            left: 10px;
+        }
+
+        .total .arrow-text {
+            position: relative;
+            display: inline-block;
+            font-size: 11px;
+            width: 370px;
+            height: 15px;
+            text-align: right;
+            padding-top: 20px;
+            padding-bottom: 0px;
+        }
+
+        .total .arrow-text .date {
+            font-size: 10px;
+        }
+
+        .total .price {
+            position: relative;
+            width: 400px;
+            display: inline-block;
+        }
+
+        .total .price .price-image {
+            position: absolute;
+            margin-bottom: -80px;
+            top: -40;
+            right: 150px;
+        }
+
+        .total .price .price-value {
+            position: absolute;
+            font-size: 20px;
+            width: 100px;
+            font-weight: bold;
+            top: -25px;
+            right: 15px;
+        }
+
+        .pay {
+            position: relative;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        .pay td {
+            width: 10%;
+        }
+
+        .pay .second-arrow {
+            position: relative;
+            width: 40%;
+            text-align: center;
+            height: 40px;
+        }
+
+        .pay .second-arrow span {
+            position: relative;
+            margin-top: -40px;
         }
     </style>
 </head>
 <body>
-    <div class="contaienr"></div>
+    <div class="contaienr">
+        <div class="aviso">
+            <div class="header">
+                <img class="aviso-brasao" src="img/brasao_brasil.png">
+                <h4>AVISO DE REGISTRO NO:</h4>
+                <h2>CARTÓRIO DO 6º OFÍCIO DE REGISTRO CIVIL, TÍTULOS E DOCUMENTOS E PESSOAS JURÍDICAS DO DISTRITO FEDERAL</h2>
+                <h3>QI 416 conjunto M Lts. 2/3 Loja 02 - Samambaia - Brasília - DF</h3>
+            </div>
+            <div class="personal-info">
+                <b>Nome:</b> <span>ADRIANO FRANCISCO DE MOURA</span><br />
+                <b>CPF/CNPJ:</b> <span>102.136.106-20</span>
+                <b class="contrato">Contrato(S):</b> <span>4985 XXXX XXXX 8033</span>
+
+                <p><span class="space">Comunicamos</span>  que  foi  registrado  neste  cartório,  em  títulos  e  documentos  sob  o  protocolo  nº  XXXXXX  em  XX/XX/XXXX,  Selo  Digital  nº XXXXXXXXXXXXXXX, um documento em que V.Sa. figura como parte, conforme página em anexo. A autenticidade do documento poderá ser consultada no <a href="www.6rtddf.com.br">www.6rtddf.com.br</a> por meio do nº 88764317.</p>
+                <img class="aviso-barcode" src="img/aviso_barcode.png">
+            </div>
+        </div>
+        <div class="service">
+            <div class="infos">
+                <div><b>ADRIANO FRANCISCO DE MOURA,</b></div>
+                <div><b>CPF:10213610620,</b></div>
+                <div><b>Contrato(s):4985 XXXX XXXX 8033</b></div>
+                <img class="service-premiun" src="img/service_premiun.png">
+            </div>
+            <div class="text">
+                <p>
+                    A <b>SERVICE PREMIUM RECUPERADORA DE CREDITOS LTDA</b>, prestadora de serviços e parceira do <b>BANCO BRADESCO</b>, vem por meio desta declarar que, VSª. consta com pendência(s) de pagamento do(s) contrato(s) acima especificado(s),  nesta data.<br />
+                    O não pagamento do valor abaixo descrito será interpretado como falta de interesse e por consequência o possível envio, por parte do credor, de NOTIFICAÇÃO EXTRAJUDICIAL e de propositura de AÇÃO JUDICIAL.<br />
+                    <b>Na eventualidade do débito de VSª. já ter sido regularizado, favor desconsiderar o presente.</b><br />
+                    A quitação do débito ocorre com o pagamento integral da dívida através do acordo firmado.
+                </p>
+            </div>
+        </div>
+        <div class="total">
+            <img class="first-arrow" src="img/first_arrow.png">
+            <div class="arrow-text"><b>Atenção! Esse é o valor de seu débito, até <span class="date">13/09/2017</span></b></div>
+            <div class="price">
+                <img class="price-image" src="img/total_price.png">
+                <span class="price-value">R$ 3.285,10</span>
+            </div>
+        </div>
+        <table class="pay">
+            <tr>
+                <td class="second-arrow"><img src="img/second_arrow.png"><span>Pague, até 29/09/2017, as opções:</span></td>
+                <td>teste</td>
+                <td>teste3</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

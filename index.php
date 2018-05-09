@@ -1,13 +1,10 @@
 <?php
-
 require 'vendor/autoload.php';
 
 use Spipu\Html2Pdf\Html2Pdf;
     
 
-if (count($_GET) && $_GET['action'] == 'export') {
-    exportToPdf('./boleto.html', 'boleto.pdf');
-}
+exportToPdf('./boleto.html', 'boleto.pdf');
 
 function exportToPdf($htmlPath, $file_name) {
 
