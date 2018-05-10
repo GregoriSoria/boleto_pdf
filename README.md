@@ -1,5 +1,8 @@
 # boleto_pdf
 
+Doc
+https://github.com/spipu/html2pdf/blob/master/doc/output.md
+
 Examples
 Send PDF to browser without specifying a name
 `$html2pdf->output(); `

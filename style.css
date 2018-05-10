@@ -1,0 +1,367 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.aviso a {
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 793px;
+}
+
+.aviso {
+    border: 1px solid #000;
+}
+
+
+.aviso .header {
+    position: relative;
+    text-align: center;
+    padding: 5px 120px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.aviso h4 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.aviso-brasao {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 60px;
+}
+
+.aviso h2 {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.aviso h3 {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.aviso .personal-info {
+    position: relative;
+    padding: 0 10px;
+    font-size:  12px;
+}
+
+.aviso .personal-info .contrato {
+    margin-left: 40px;
+}
+
+.aviso .personal-info p {
+    padding: 10px 0;
+    font-size: 12px;
+    text-align: justify;
+    padding-bottom: 40px;
+}
+
+.aviso .personal-info .aviso-barcode {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 100px;
+}
+
+p .space {
+    margin-left: 50px;
+}
+
+.service {
+    position: relative;
+    padding: 10px 0;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.service .infos .service-premiun {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 170px;
+}
+
+.service .text {
+    margin-top: 10px;
+}
+
+.total {
+    position: relative;
+    margin-top: 20px;
+}
+
+.total .first-arrow {
+    position: absolute;
+    margin-right: -400px;
+    margin-bottom: 50px;
+    width: 330px;
+    left: 10px;
+}
+
+.total .arrow-text {
+    position: relative;
+    display: inline-block;
+    font-size: 11px;
+    width: 300px;
+    height: 15px;
+    text-align: right;
+    background: #efefef;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    padding-right: 5px;
+}
+
+.total .arrow-text:after {
+    content: ' ';
+    position: absolute;
+    right: -20px;
+    top: -4px;
+    width: 0;
+    height: 0;
+    border: 20px solid #efefef;
+    border-left-color:  transparent;
+    border-top-color:  transparent;
+    transform: rotate(-45deg);
+}
+
+.total .arrow-text .date {
+    font-size: 10px;
+}
+
+.total .price {
+    position: relative;
+    padding: 5px 30px;
+    display: inline-block;
+    margin-left: 70px;
+    border:  4px solid #d8d8d8;
+    border-radius: 10px 5px 10px 5px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.35);
+}
+
+.total .price .price-image {
+    position: absolute;
+    margin-bottom: -80px;
+    top: -40;
+    right: 150px;
+}
+
+.total .price .price-value {
+    font-size: 20px;
+    font-weight: bold;
+    top: 8px;
+    left: 15px;
+}
+
+.pay {
+    position: relative;
+    margin-top: 20px;
+}
+
+.pay td {
+    width: 10%;
+}
+
+.pay .second-arrow {
+    position: relative;
+    float:  left;
+    margin-top: 25px;
+    text-align: center;
+    background: #efefef;
+    padding: 14px 15px;
+    height: 16px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.35);
+}
+
+.pay .second-arrow:after {
+    content: ' ';
+    position: absolute;
+    right: -20px;
+    top: -5px;
+    width: 0;
+    height: 0;
+    border: 28px solid #efefef;
+    border-left-color:  transparent;
+    border-top-color:  transparent;
+    transform: rotate(-45deg);
+    box-shadow: 1px 6px 5px -2px rgba(0,0,0,0.35);
+}
+
+.pay .second-arrow span {
+    position: relative;
+    margin-top: -40px;
+    font-size: 15px;
+}
+
+.parcels {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    border: 2px solid #000;
+    border-radius: 10px 3px 10px 3px;
+    padding: 10px;
+    padding-right: 60px;
+    margin-left:  50px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.45);
+}
+
+.parcels .discount {
+    text-align:  center;
+}
+
+.parcels ul {
+    list-style:  none;
+}
+
+.parcels .percent-discount {
+    position: absolute;
+    top: -20px;
+    right: -120px;
+    background: #b02417;
+    padding: 10px;
+    border-radius: 6px;
+    text-align:  center;
+    color:  #FFF;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.45);
+}
+
+.parcels .percent-discount span {
+    font-size: 14px;
+}
+
+.small-text {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.small-text small {
+    font-size: 11px;
+}
+
+.small-text p {
+    font-size: 12px;
+}
+
+.payer-receipt {
+    margin-top: 10px;
+    border-bottom: 3.5px dotted #000;
+}
+
+.detachable-receipt {
+    margin-top: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td.bradesco {
+    width: 100px;
+    padding: 0 10px;
+}
+
+table:not(:first-child) {
+    border-top: 2px solid #000;
+}
+
+table td:not(:first-child):not(.no-border) {
+    border-left: 2px solid #000;
+}
+
+table td {
+    position: relative;
+    padding: 0 5px;
+    vertical-align: bottom;
+}
+
+table td.text-center {
+    text-align: center;
+    padding-top: 16px;
+}
+
+table td.text-top {
+    vertical-align: top;
+}
+
+table td.gray {
+    background: #dfdfdf;
+}
+
+table td {
+    padding: 4px 0;
+    padding-top: 8px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+table td.no-padding {
+    padding: 0;
+    vertical-align: middle;
+}
+
+table td.large-content {
+    vertical-align: middle;
+    line-height: 1.2;
+}
+
+table td.strong {
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+table td.text-center small.small-top {
+    left: 3px;
+}
+
+table small {
+    font-size: 10px;
+}
+
+table small.small-top {
+    position: absolute;
+    font-size: 8px;
+    top: 0px;
+    left: 0;
+}
+
+.payer-receipt table small.small-top.mechanic-auth {
+    right: 130px;
+    left: initial;
+}
+
+.detachable-receipt table small.small-top.mechanic-auth {
+    right: 40px;
+    left: initial;
+}
+
+table td:not(.text-center) p {
+    font-size: 10px;
+    margin-left: 20px;
+}
+
+.detachable-receipt td .cpf {
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}

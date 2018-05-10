@@ -1,185 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <style>
-        * {
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 0;
-            margin: 0;
-        }
-
-        a {
-            color: #000;
-        }
-
-        .container {
-            position: relative;
-            width: 100%;
-        }
-
-        img {
-            max-width: 100%;
-        }
-
-        .aviso {
-            position: relative;
-            border: 1px solid #000;
-        }
-
-        .aviso .header {
-            position: relative;
-            text-align: center;
-            padding: 0 100px;
-            width: 100%;
-        }
-
-        .aviso h4 {
-            position: relative;
-            padding: 0;
-            margin: 0;
-            font-size: 11px;
-            font-weight: normal;
-        }
-
-        .aviso-brasao {
-            position: absolute;
-            margin-bottom: -130px;
-            top: 5px;
-            left: 5px;
-            width: 60px;
-        }
-
-        .aviso h2 {
-            position: relative;
-            text-align: center;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        .aviso h3 {
-            font-size: 13px;
-            font-weight: bold;
-        }
-
-        .aviso .personal-info {
-            position: relative;
-            padding: 0 10px;
-            height: 90px;
-        }
-
-        .aviso .personal-info .contrato {
-            margin-left: 40px;
-        }
-
-        .aviso .personal-info p {
-            padding: 10px 0;
-            font-size: 12px;
-            text-align: justify;
-        }
-
-        .aviso .personal-info .aviso-barcode {
-            position: absolute;
-            left: 650px;
-            bottom: 5px;
-            margin-right: -50px;
-            margin-bottom: 45px;
-            width: 100px;
-        }
-
-        p .space {
-            margin-left: 50px;
-        }
-
-        .service {
-            position: relative;
-            padding: 10px 0;
-            height: 200px;
-        }
-
-        .service .infos .service-premiun {
-            position: absolute;
-            left: 580px;
-            top: 5px;
-            margin-right: -50px;
-            margin-bottom: -240px;
-            width: 180px;
-        }
-
-        .total {
-            position: relative;
-            height: 80px;
-        }
-
-        .total .first-arrow {
-            position: absolute;
-            margin-right: -400px;
-            margin-bottom: 50px;
-            width: 330px;
-            left: 10px;
-        }
-
-        .total .arrow-text {
-            position: relative;
-            display: inline-block;
-            font-size: 11px;
-            width: 370px;
-            height: 15px;
-            text-align: right;
-            padding-top: 20px;
-            padding-bottom: 0px;
-        }
-
-        .total .arrow-text .date {
-            font-size: 10px;
-        }
-
-        .total .price {
-            position: relative;
-            width: 400px;
-            display: inline-block;
-        }
-
-        .total .price .price-image {
-            position: absolute;
-            margin-bottom: -80px;
-            top: -40;
-            right: 150px;
-        }
-
-        .total .price .price-value {
-            position: absolute;
-            font-size: 20px;
-            width: 100px;
-            font-weight: bold;
-            top: -25px;
-            right: 15px;
-        }
-
-        .pay {
-            position: relative;
-            width: 100%;
-            border: 1px solid black;
-        }
-
-        .pay td {
-            width: 10%;
-        }
-
-        .pay .second-arrow {
-            position: relative;
-            width: 40%;
-            text-align: center;
-            height: 40px;
-        }
-
-        .pay .second-arrow span {
-            position: relative;
-            margin-top: -40px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Boleto</title>
 </head>
 <body>
-    <div class="contaienr">
+    <div class="container">
         <div class="aviso">
             <div class="header">
                 <img class="aviso-brasao" src="img/brasao_brasil.png">
@@ -213,20 +42,283 @@
             </div>
         </div>
         <div class="total">
-            <img class="first-arrow" src="img/first_arrow.png">
+            <!-- <img class="first-arrow" src="img/first_arrow.png"> -->
             <div class="arrow-text"><b>Atenção! Esse é o valor de seu débito, até <span class="date">13/09/2017</span></b></div>
             <div class="price">
-                <img class="price-image" src="img/total_price.png">
+                <!-- <img class="price-image" src="img/total_price.png"> -->
                 <span class="price-value">R$ 3.285,10</span>
             </div>
         </div>
-        <table class="pay">
-            <tr>
-                <td class="second-arrow"><img src="img/second_arrow.png"><span>Pague, até 29/09/2017, as opções:</span></td>
-                <td>teste</td>
-                <td>teste3</td>
-            </tr>
-        </table>
+        <div class="pay">
+            <div class="second-arrow">
+                <!-- <img src="img/second_arrow.png"> -->
+                <span>Pague, até 29/09/2017, as opções:</span>
+            </div>
+            <div class="parcels">
+                <div class="discount"><b>À vista COM DESCONTO: R$ 919,83</b></div>
+                <ul>
+                    <li>Ou Entrada de R$ 162,92 + 05x de R$ 162,92</li>
+                    <li>Ou Entrada de R$ 140,60 + 11x de R$ 140,60</li>
+                    <li>Ou Entrada de R$ 100,48 + 17x de R$ 100,48</li>
+                </ul>
+                <div class="percent-discount">
+                    <div><b>DESCONTO</b></div>
+                    <div><b>72%</b></div>
+                    <span><b>No pagamento a vista</b></span>
+                </div>
+            </div>
+        </div>
+        <div class="small-text">
+            <p><small>Em caso de dúvidas, entre em contato no prazo de 48 horas a partir do recebimento desta nos telefones:</small></p>
+            <p><small><b>São Paulo/SP (011) 3385-6840, para demais localidades 0800 775 5544,</b> Horários de funcionamento</small>:</p>
+            <p>Endereço: Rua Maria Paula 88 7º ao 10º andar cep: 013.19-000 São Paulo-SP</p>
+            <p><small>de segunda à sexta feira das 08:00 às 20:00hs, aos sábados das 08:00 às 13:00 ou via e-mail: <a href="mailto:brd@servicepremium.com.br">brd@servicepremium.com.br</a> ou <a href="mailto:ouvidoria@servicep_emium.com.br">ouvidoria@servicep_emium.com.br</a></small></p>
+        </div>
+        <div class="payer-receipt">
+            <table>
+                <tr>
+                    <td width="10%" class="bradesco"><img src="img/bradesco.png"></td>
+                    <td width="8%" class="text-center"><b>237-2</b></td>
+                    <td><span>23794.02502 62000.681296 09000.001405 3 72970000000000</span> <small>Recibo do Pagador</small></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td width="78%">
+                        <small class="small-top">Pagador</small>
+                        <p>ADRIANO FRANCISCO DE MOURA CPF: 136.106.200-000</p>
+                        <p>RUA CARLOS DE SOUZA NAZARE 267 CS CENTRO SÃO PAULO-SP CEP:01025-001</p>
+                    </td>
+                    <td width="22%" class="text-center">
+                        <small class="small-top">Vencimento</small>
+                        29/09/2017
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td width="78%">
+                        <small class="small-top">Nome do Beneficiário/CNPJ/Endereço</small>
+                        <p>Banco Bradesco S.A - CNPJ: 60.746.948/0001-12 - Cidade de Deus s/n - Prédio Prata 2º andar - Vila Yara - CEP: 06029-900 - Osasco - SP</p>
+                    </td>
+                    <td width="22%" class="text-center">
+                        <small class="small-top">Agência/Código Beneficiário</small>
+                        4025-8/0000014-0
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td width="21%" class="text-center">
+                        <small class="small-top">Número do Documento</small>
+                        0000143564
+                    </td>
+                    <td width="18%" class="text-center">
+                        <small class="small-top">Nosso Número</small>
+                        0000143564
+                    </td>
+                    <td width="13%" class="text-center">
+                        <small class="small-top">Espécie</small>
+                        R$
+                    </td>
+                    <td width="13%" class="text-center">
+                        <small class="small-top">Espécie Doc.</small>
+                        DM
+                    </td>
+                    <td width="13%" class="text-center">
+                        <small class="small-top">Data do processamento</small>
+                        13/09/2017
+                    </td>
+                    <td width="22%" class="text-center">
+                        <small class="small-top">(=) Valor do Documento</small>
+                        
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td width="25.5%" class="text-center">
+                        <small class="small-top">Número do contrato</small>
+                        4985 XXXX XXXX 8033
+                    </td>
+                    <td width="25.5%" class="text-center">
+                        <small class="small-top">(–) Descontos/Deduções/Abatimentos</small>
+                        
+                    </td>
+                    <td width="27%" class="text-center">
+                        <small class="small-top">(+) Mora/Multa/Juros/Outros Acréscimos</small>
+                        
+                    </td>
+                    <td width="22%" class="text-center">
+                        <small class="small-top">(=) Valor Cobrado</small>
+                        
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><small class="small-top mechanic-auth">Autenticação Mecânica</small></td>
+                </tr>
+            </table>
+        </div>
+        <div class="detachable-receipt">
+            <table>
+                <tr>
+                    <td width="10%" class="bradesco"><img src="img/bradesco.png"></td>
+                    <td width="8%" class="text-center"><b>237-2</b></td>
+                    <td class="strong"><span>23794.02502 62000.681296 09000.001405 3 72970000000000</span></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td width="78%">
+                        <small class="small-top">Local de Pagamento</small>
+                        <p>Pagável preferencialmente nas agências do banco Bradesco</p>
+                    </td>
+                    <td width="22%" class="gray text-center">
+                        <small class="small-top">Vencimento</small>
+                        29/09/2017
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td width="78%">
+                        <small class="small-top">Nome do Beneficiário/CNPJ/Endereço</small>
+                        <p>Banco Bradesco S.A - CNPJ: 60.746.948/0001-12 - Cidade de Deus s/n - Prédio Prata 2º andar - Vila Yara - CEP: 06029-900 - Osasco - SP</p>
+                    </td>
+                    <td width="22%" class="text-center">
+                        <small class="small-top">Agência/Código Beneficiário</small>
+                        4025-8/0000014-0
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td width="21%" class="text-center">
+                        <small class="small-top">Data do Documento</small>
+                        14/09/2017
+                    </td>
+                    <td width="18%" class="text-center">
+                        <small class="small-top">Número do Documento</small>
+                        0000143564
+                    </td>
+                    <td width="13%" class="text-center">
+                        <small class="small-top">Espécie</small>
+                        DM
+                    </td>
+                    <td width="13%" class="text-center">
+                        <small class="small-top">Aceite</small>
+                        N
+                    </td>
+                    <td width="13%" class="text-center">
+                        <small class="small-top">Data do processamento</small>
+                        13/09/2017
+                    </td>
+                    <td width="22%" class="text-center">
+                        <small class="small-top">Nosso Número</small>
+                        200068812909
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td width="16%" class="text-center">
+                        <small class="small-top">Uso do Banco</small>
+                        
+                    </td>
+                    <td width="16%" class="text-center">
+                        <small class="small-top">Carteira</small>
+                        06
+                    </td>
+                    <td width="15%" class="text-center">
+                        <small class="small-top">Espécie moeda</small>
+                        R$
+                    </td>
+                    <td width="15%" class="text-center">
+                        <small class="small-top">Quantidade</small>
+                        
+                    </td>
+                    <td width="16%" class="text-center">
+                        <small class="small-top">Valor</small>
+                        
+                    </td>
+                    <td width="22%" class="gray text-center">
+                        <small class="small-top">(=) Valor do Documento</small>
+                        
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr rowspan="5">
+                    <td width="78%" class="large-content">
+                        <small class="small-top">Instruções: (Texto de responsabilidade do Beneficiário)</small>
+                        <p>
+                            NÃO RECEBER APÓS O DIA <b>21/10/2016</b>. QUALQUER DÚVIDA ENTRAR EM CONTATO: SÃO PAULO (011) 3385-6840 E DEMAIS LOCALIDADES 0800 775  5544  DE  SEGUNDA  A  SEXTA  DAS  08:00  AS  19:40HRS  E  SÁBADO  DAS  08:00  AS  12:40  (LIGAR  SOMENTE  DE  TELEFONE  FIXO)  ou  e-mail:<br>
+                            <a href="mailto:brd@servicepremium.com.br">brd@servicepremium.com.br</a><br>
+                            <b>Senha: 690747 Contrato: 4220XXXXXXXXX8011</b><br>
+                            Sr Caixa, não receber valores diferentes das propostas acima. sr caixa não receber após 21/10/2016<br>
+                            <b>Atenção:</b><br>
+                            Escolha  o  melhor  plano,  efetue  o  pagamento,  utilizando  este  boleto,  no  valor  exato  da  parcela,  inclusive  centavos,  sob  pena  de  não  recolhimento  da proposta. Pagável em qualquer banco até o vencimento. No plano parcelado, os boletos das demais parcelas FIXAS, serão enviados ao seu endereço pelo Banco, e caso não receba com antecedência, deverá entrar em contato com a Central de Atendimento, para emissão de 2ª via. Caso o pagamento já tenha sido efetuado, favor desconsiderar.
+                        </p>
+                    </td>
+                    <td width="22%" class="no-padding">
+                        <table>
+                            <td width="22%" class="text-center">
+                                <small class="small-top">(-) Desconto/Abatimento</small>
+                                
+                            </td>
+                        </table>
+                        <table>
+                            <td width="22%" class="text-center">
+                                <small class="small-top">(-) Outras Deduções</small>
+                                
+                            </td>
+                        </table>
+                        <table>
+                            <td width="22%" class="text-center">
+                                <small class="small-top">(+) Mora/Multa</small>
+                                
+                            </td>
+                        </table>
+                        <table>
+                            <td width="22%" class="text-center">
+                                <small class="small-top">(+) Outros Acréscimos</small>
+                                
+                            </td>
+                        </table>
+                        <table>
+                            <td width="22%" class="text-center">
+                                <small class="small-top">(=) Valor Cobrado</small>
+                                
+                            </td>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td width="78%">
+                        <small class="small-top">Pagador</small>
+                        <p><big>ADRIANO FRANCISCO DE MOURA</big></p>
+                        <p><big>RUA CARLOS DE SOUSA NAZARE 267 CS - CENTRO</big></p>
+                        <p><big>01025-001 SÃO PAULO - SP</big></p>
+                    </td>
+                    <td width="22%" class="text-center no-border">
+                        <div class="cpf">CPF:102.136.106-20</div>
+                        <small>Ficha de Compensação</small>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td width="55%">
+                        <img src="img/barcode.png">
+                    </td>
+                    <td class="no-border"><small class="small-top mechanic-auth">Autenticação Mecânica</small></td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>

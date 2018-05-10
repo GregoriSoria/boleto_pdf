@@ -1,0 +1,174 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #000;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.aviso {
+    position: relative;
+    border: 1px solid #000;
+}
+
+.aviso .header {
+    position: relative;
+    text-align: center;
+    padding: 0 100px;
+    width: 100%;
+}
+
+.aviso h4 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.aviso-brasao {
+    position: absolute;
+    margin-bottom: -130px;
+    top: 5px;
+    left: 5px;
+    width: 60px;
+}
+
+.aviso h2 {
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.aviso h3 {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.aviso .personal-info {
+    position: relative;
+    padding: 0 10px;
+    height: 90px;
+}
+
+.aviso .personal-info .contrato {
+    margin-left: 40px;
+}
+
+.aviso .personal-info p {
+    padding: 10px 0;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.aviso .personal-info .aviso-barcode {
+    position: absolute;
+    left: 650px;
+    bottom: 5px;
+    margin-right: -50px;
+    margin-bottom: 45px;
+    width: 100px;
+}
+
+p .space {
+    margin-left: 50px;
+}
+
+.service {
+    position: relative;
+    padding: 10px 0;
+    height: 200px;
+}
+
+.service .infos .service-premiun {
+    position: absolute;
+    left: 580px;
+    top: 5px;
+    margin-right: -50px;
+    margin-bottom: -240px;
+    width: 180px;
+}
+
+.total {
+    position: relative;
+    height: 80px;
+}
+
+.total .first-arrow {
+    position: absolute;
+    margin-right: -400px;
+    margin-bottom: 50px;
+    width: 330px;
+    left: 10px;
+}
+
+.total .arrow-text {
+    position: relative;
+    display: inline-block;
+    font-size: 11px;
+    width: 370px;
+    height: 15px;
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.total .arrow-text .date {
+    font-size: 10px;
+}
+
+.total .price {
+    position: relative;
+    width: 400px;
+    display: inline-block;
+}
+
+.total .price .price-image {
+    position: absolute;
+    margin-bottom: -80px;
+    top: -40;
+    right: 150px;
+}
+
+.total .price .price-value {
+    position: absolute;
+    font-size: 20px;
+    width: 100px;
+    font-weight: bold;
+    top: -25px;
+    right: 15px;
+}
+
+.pay {
+    position: relative;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.pay td {
+    width: 10%;
+}
+
+.pay .second-arrow {
+    position: relative;
+    width: 40%;
+    text-align: center;
+    height: 40px;
+}
+
+.pay .second-arrow span {
+    position: relative;
+    margin-top: -40px;
+}
